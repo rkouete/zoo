@@ -1,10 +1,10 @@
 package entities;
 
-public class Animal {
+public abstract class Animal {
 
     private String species;
     private int age;
-    private String name;
+    protected String name;
 
     public Animal(){
     }
@@ -24,9 +24,6 @@ public class Animal {
         this.name = name;
     }
 
-    public void setSpecies(String species){
-        this.species = species;
-    }
 
     public void setName(String name){
         this.name = name;
@@ -44,16 +41,7 @@ public class Animal {
         System.out.println("I am eating");
     }
 
-    public void cry(){
-        if(species.equals("Dog"))
-            System.out.println("WOUH wouh WOUH");
+    public abstract void cry();
 
-        if(species.equals("Cat"))
-            System.out.println("Miaou Miaou Miaou");
-
-        if (species.equals("Chicken"))
-            System.out.println("Cot Cot Cot");
-
-        }
     }
 

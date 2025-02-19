@@ -4,25 +4,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Animal dog = new Animal(); // je crée un nouvel objet de type Animal
-        dog.setSpecies("Dog"); // je définis l'espèce de l'animal
-        dog.setName("Medor");  //
-        dog.setAge(5); //
+        Dog dog1 = new Dog();
+        dog1.setName("Medor");
+        dog1.setAge(5);
 
-        dog.move(); //
-        dog.cry(); // WOUH wouh WOUH
+        dog1.move(); //
+        dog1.cry(); // WOUH wouh WOUH
 
-        Animal cat = new Animal(); // je crée un nouvel objet de type Animal
-        cat.setSpecies("Cat"); // je définis l'espèce de l'animal
-        cat.setName("Minou");  //
-        cat.move(); //
-        cat.cry(); // Miaou Miaou
+        Cat cat = new Cat();
+        cat.setName("Felix");
+        cat.setAge(3);
+        cat.cry();
 
-        Animal chicken = new Animal("Chicken", 1); // je crée un nouvel objet de type Animal
-        chicken.setName("Coco");  //
-        chicken.move(); //
-        chicken.cry(); // Cot Cot Cot
-
+        Chicken chicken = new Chicken();
+        chicken.setName("Coco");
+        chicken.cry();
 
     }
 }

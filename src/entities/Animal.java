@@ -1,7 +1,10 @@
+package entities;
+
 public class Animal {
-    String species;
-    int age;
-    String name;
+
+    private String species;
+    private int age;
+    private String name;
 
     public Animal(){
     }
@@ -19,6 +22,18 @@ public class Animal {
         this.species = species;
         this.age = age;
         this.name = name;
+    }
+
+    public void setSpecies(String species){
+        this.species = species;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void move() {

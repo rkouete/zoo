@@ -3,7 +3,7 @@ package entities;
 public abstract class Animal {
 
     private String species;
-    private int age;
+    protected int age;
     protected String name;
 
     public Animal(){
@@ -39,6 +39,21 @@ public abstract class Animal {
 
     public void feed(){
         System.out.println("I am eating");
+    }
+
+    @Override
+    public String toString(){
+        return "Animal [Name: " + name + " Age: " + age + " ans]";
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        return obj instanceof Animal animal && this.age == animal.age;
+    }
+
+    @Override
+    public int hashCode() {
+        return age;
     }
 
     public abstract void cry();

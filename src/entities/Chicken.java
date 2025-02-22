@@ -5,4 +5,10 @@ public class Chicken extends Animal{
     public void cry() {
         System.out.println("Cot Cot Cot");
     }
+
+    @Override
+    public String toString(){
+        return "Chicken [Name: " + name + " Age: " + age + " ans]";
+    }
+
 }

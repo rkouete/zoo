@@ -6,6 +6,8 @@ public abstract class Animal {
     protected int age;
     protected String name;
 
+    public static final int COUNT = 50;
+
     public Animal(){
     }
 
